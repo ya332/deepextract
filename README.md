@@ -57,6 +57,14 @@ python -m unittest
 
 MIT. See LICENSE.md
 
+## Version
+
+Follows syntax vM.M.P
+First is major and means not backwards compatible changes. Second is minor and means backwards compatible changes. 
+Third is patch and means small backwards compatible changes.
+
+The manual place of source of truth is at `deepextract/__init__.py`
+
 ## Authors ✏️
 
 `deepextract` was written by `Yigit Alparslan <alparslanyigitcan@gmail.com>`.
