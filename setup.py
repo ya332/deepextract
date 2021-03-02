@@ -1,7 +1,8 @@
 import io
 import os
 import re
-
+import codecs
+import os.path
 from setuptools import find_packages
 from setuptools import setup
 
@@ -13,9 +14,17 @@ def read(filename):
         return re.sub(text_type(r':[a-z]+:`~?(.*?)`'), text_type(r'``\1``'), fd.read())
 
 
+def get_version(rel_path):
+    for line in read(rel_path).splitlines():
+        if line.startswith('__version__'):
+            delim = '"' if '"' in line else "'"
+            return line.split(delim)[1]
+    else:
+        raise RuntimeError("Unable to find version string.")
+
 setup(
     name="deepextract",
-    version="1.0.3",
+    version=get_version("deepextract/__init__.py"),
     url="https://github.com/ya332/deepextract",
     license='MIT',
 
