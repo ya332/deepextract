@@ -27,8 +27,8 @@ Support for Python 3.6 and greater.
 
 ```sh
 conda install -r requirements.txt
-
 ```
+
 Source code is in deepextract. Start editing and Happy contributing! 🌟
 
 ## Deployment to PyPI 💎
@@ -38,8 +38,10 @@ Based on descriptions from [here](https://packaging.python.org/guides/publishing
 And it'll publish any push to TestPyPI which is useful for providing test builds to repo's alpha users as well as making sure that your release pipeline remains healthy.
 
 Manual deploy to TestPyPI:
-`python setup.py sdist bdist_wheel`
-`twine upload -r testpypi dist/*`
+```sh
+python setup.py sdist bdist_wheel
+twine upload -r testpypi dist/*
+```
 
 ## Running tests 🔥
 
