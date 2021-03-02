@@ -21,8 +21,13 @@ jobs:
       with:
         python-version: '3.x'
 
+    - name: Install requirements
+      run: |
+        pip install -r requirements.txt
+
     - name: Test with unittest
       run: |
+        pip install -r requirements.txt
         python -m unittest
 
     - name: Install pypa/build
@@ -31,6 +36,7 @@ jobs:
         pip install
         build
         --user
+        
     - name: Build a binary wheel and a source tarball
       run: >-
         python -m
