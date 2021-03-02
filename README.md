@@ -1,8 +1,8 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://gitHub.com/ya332/deepextract/graphs/commit-activity)
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
-[![PyPI version fury.io](https://badge.fury.io/py/ansicolortags.svg)](https://pypi.python.org/pypi/ansicolortags/)
-[![PyPI pyversions](https://img.shields.io/pypi/pyversions/ansicolortags.svg)](https://pypi.python.org/pypi/ansicolortags/)
-[![PyPI status](https://img.shields.io/pypi/status/ansicolortags.svg)](https://pypi.python.org/pypi/ansicolortags/)
+[![PyPI version fury.io](https://badge.fury.io/py/deepextract.svg)](https://gitHub.com/ya332/deepextract/)
+[![PyPI pyversions](https://img.shields.io/pypi/pyversions/deepextract.svg)](https://gitHub.com/ya332/deepextract/)
+[![PyPI status](https://img.shields.io/pypi/status/deepextract.svg)](https://pypi.python.org/pypi/deepextract/)
 [![Latest PyPI versions](https://img.shields.io/pypi/v/deepextract.svg)](https://pypi.python.org/pypi/deepextract)
 
 # deepextract 🔥
