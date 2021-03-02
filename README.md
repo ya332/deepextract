@@ -65,6 +65,8 @@ Third is patch and means small backwards compatible changes.
 
 The manual place of source of truth is at `deepextract/__init__.py`
 
+Source: https://packaging.python.org/guides/single-sourcing-package-version/#single-sourcing-the-version
+
 ## Authors ✏️
 
 `deepextract` was written by `Yigit Alparslan <alparslanyigitcan@gmail.com>`.
