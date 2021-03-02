@@ -4,6 +4,9 @@
 [![PyPI pyversions](https://img.shields.io/pypi/pyversions/deepextract.svg)](https://gitHub.com/ya332/deepextract/)
 [![PyPI status](https://img.shields.io/pypi/status/deepextract.svg)](https://pypi.python.org/pypi/deepextract/)
 [![Latest PyPI versions](https://img.shields.io/pypi/v/deepextract.svg)](https://pypi.python.org/pypi/deepextract)
+[![Downloads](https://pepy.tech/badge/deepextract)](https://pepy.tech/project/deepextract)
+[![GitTutorial](https://img.shields.io/badge/PR-Welcome-%23FF8300.svg?)](https://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project)
+
 
 # deepextract 🔥
 
