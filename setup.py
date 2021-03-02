@@ -15,7 +15,7 @@ def read(filename):
 
 setup(
     name="deepextract",
-    version="1.0.2",
+    version="1.0.3",
     url="https://github.com/ya332/deepextract",
     license='MIT',
 
