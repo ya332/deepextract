@@ -24,6 +24,7 @@ setup(
 
     description="A Python library to parse JSON, YAML files and extract deeply nested keys.",
     long_description=read("README.md"),
+    long_description_content_type='text/markdown',
 
     packages=find_packages(exclude=('tests','data')),
 
