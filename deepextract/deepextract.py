@@ -1,5 +1,3 @@
-# read_categories.py file
-
 import yaml
 import os
 
@@ -9,7 +7,7 @@ def json_extract(obj, target):
             obj ([dict]): an arbitrarily nested dictionary with environemt variables
             target (str): The target key we want to extract
         Returns:
-            (str| dict): target key can have a string or another dictionary as value in obj. 
+            (str | dict): target key can have a string or another dictionary as value in obj. 
         Raises:
             KeyError: if the target is not in the dictionary, raises KeyError.
     """
