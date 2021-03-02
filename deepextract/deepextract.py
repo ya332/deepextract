@@ -19,7 +19,7 @@ def extract_key(obj, target):
             if k == target:
                 return v
 
-            elif isinstance(v, (dict, list)):
+            elif isinstance(v, (dict)):
                 return extract_key(v, target)
 
     raise KeyError("Key: '{}' not found".format(target))
@@ -30,15 +30,21 @@ def extract_key_from_file(file_path_name, target):
     File path can point to a json file or a yaml file.
 
     Args:
-        file_path_name ([type]): [description]
+        file_path_name (str): file path name
     Returns:
         (str | dict): target key can have a string or another dictionary as value in obj. 
+    Raises:
+        FileNoutFoundError: json and yaml file could not be found
     """
     if "json" in file_path_name:
         obj = read_json_content(file_path_name)
+        return extract_key(obj, target)
     elif "yaml" or "yml" in file_path_name:
         obj = read_yaml_content(file_path_name)
-    return extract_key(obj, target)
+        return extract_key(obj, target)
+    
+    raise FileNotFoundError('{} not found'.format(file_path_name))
+    
 
 
 def read_yaml_content(yaml_file_name):
@@ -75,23 +81,11 @@ def read_json_content(json_file_name):
         raise e
     finally:
         f.close()
+    return data
 
-
-def test_env_variables(yaml_file_name):
-    """Checks if environment variables are set correctly.
-
-    Args:
-        yaml_file_name (str): file name of the yaml file that has environment variables 
-    Raises:
-        ValueError: raises if environment variable is not successfully.
-    """
-    yaml_file_content = read_yaml_content(yaml_file_name)
-    for key, value in json_extract(yaml_file_content, 'Variables').items():
-        if os.environ[key] == str(value):
-            print("export {}={}".format(key, value), end="\n")
-        else:
-            raise ValueError("Setting {}={} failed.".format(key, value))
-
-
-if __name__ == '__main__':
-    set_env_from_yaml("samTemplate-dev.yaml")
+# if __name__ == '__main__':
+#     import os
+#     json_file_name = os.path.join('..','data','test1.json')
+#     obj = read_json_content(json_file_name)
+#     print(obj)
+#     print(extract_key(obj, 'rows'))
