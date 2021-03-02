@@ -23,9 +23,9 @@ setup(
     author_email="alparslanyigitcan@gmail.com",
 
     description="A Python library to parse JSON, YAML files and extract deeply nested keys.",
-    long_description=read("README.rst"),
+    long_description=read("README.md"),
 
-    packages=find_packages(exclude=('tests',)),
+    packages=find_packages(exclude=('tests','data')),
 
     install_requires=[],
     python_requires=">=3.6.0",
