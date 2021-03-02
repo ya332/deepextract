@@ -26,6 +26,7 @@ Support for Python 3.6 and greater.
 ## Development 🛎️
 
 ```sh
+conda create -n deepextract_env python=3.7 # do it once
 conda install -r requirements.txt
 ```
 
