@@ -38,7 +38,6 @@ deeply_nested_dict = {
                                 "my_target_key": "my_target_value"
                             }
                         }
-
                     }
                 }
             }

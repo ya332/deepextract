@@ -35,7 +35,7 @@ setup(
     long_description=read("README.md"),
     long_description_content_type='text/markdown',
 
-    packages=find_packages(exclude=('tests','data')),
+    packages=find_packages(exclude=('tests','data', 'examples')),
 
     install_requires=[],
     python_requires=">=3.6.0",
@@ -46,5 +46,7 @@ setup(
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
     ],
 )
