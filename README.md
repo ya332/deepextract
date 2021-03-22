@@ -14,6 +14,8 @@ A Python library to parse JSON, YAML files and extract deeply nested keys.
 ## Usage 🎯
 
 ```python
+from deepextract import deepextract
+
 # Demo: deepextract.extract_key(obj, key)
 deeply_nested_dict = {
     "items": {
