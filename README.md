@@ -62,10 +62,10 @@ Follows syntax vM.M.P
 First is major and means not backwards compatible changes. Second is minor and means backwards compatible changes. 
 Third is patch and means small backwards compatible changes.
 
-The manual place of source of truth is at `deepextract/__init__.py`
+The manual place of source of truth for the version is at `deepextract/__init__.py`
 
 Source: https://packaging.python.org/guides/single-sourcing-package-version/#single-sourcing-the-version
 
 ## Authors ✏️
 
-`deepextract` was written by `Yigit Alparslan <alparslanyigitcan@gmail.com>`.
+`deepextract` was written by `Yigit Alparslan`.
